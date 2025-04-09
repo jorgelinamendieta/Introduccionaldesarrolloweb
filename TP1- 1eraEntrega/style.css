@@ -1,0 +1,170 @@
+/*generalll*/
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*encabezado OBVIOOOO que hay que cambiar el color jajaj */
+header {
+  background-color: #e0a8d3; /* Rosa pastel */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Blanco para que resalte */
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f8d7e3; /* Rosa más claro para interacciones */
+}
+
+nav ul li a.active {
+  color: #f8d7e3;
+  font-weight: bold;
+}
+
+/*footer*/
+footer {
+  background-color: #e0a8d3; /* Igual que el encabezado */
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 20px; /* Espacio opcional */
+}
+
+/*ESTO HAY QUE EDITARLO CHICAS, LO QUE HACE ES SEPARAR EL FOOTER DEL MAIN, pero no está implemntado bien. */
+main {
+  flex: 1;
+  margin-bottom: 40px; /* Ajuste para que el footer esté separado correctamente */
+}
+
+/*ESTILO DE LAS SECCIONES BASICO TOTAL. */
+main section {
+  padding: 30px;
+  margin: 20px auto;
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  text-align: justify; /* Alineación del texto */
+  color: #333; /* Texto gris oscuro */
+}
+
+main h2 {
+  color: #e0a8d3; /* Rosa pastel para destacar títulos */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+main p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Añadido: caja translúcida */
+.caja-translucida {
+  background-color: rgba(255, 192, 203, 0.7); /* Rosa translúcido */
+  color: #333; /* Texto gris oscuro */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border: 1px solid #ccc; /* Borde gris claro */
+  max-width: 600px; /* Ancho máximo de la caja */
+  margin: 20px auto; /* Centrado automático */
+  text-align: justify; /* Alineación de texto */
+  backdrop-filter: blur(5px); /* Fondo ligeramente difuminado */
+}
+
+/* Estilo clasico del formulario, tambien le falta mas onda*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  color: #666; /* Texto gris claro */
+}
+
+/*nO ES UNA buena practica esta, pero bueno, la cambiamos despues*/
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #e0a8d3; /* Rosa pastel */
+  outline: none;
+}
+
+form button {
+  background-color: #e0a8d3; /* Rosa pastel */
+  color: #fff; /* Texto blanco */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #c583b4; /* Rosa más intenso */
+}
+
+/* eL responsive lo copie de un trabajo que ya tenia, habria que chekearlo. pero esto es para la segunda entrega*/
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  main section {
+      margin: 10px;
+      padding: 20px;
+  }
+
+  footer {
+      font-size: 0.8rem;
+  }
+}
