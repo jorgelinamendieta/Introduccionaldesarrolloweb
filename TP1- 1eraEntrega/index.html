@@ -11,19 +11,55 @@
     <h1>IDW S.A</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="institucional.html">Información Institucional</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <section>
-      <h2>Bienvenidos a IDW S.A</h2>
-      <p>Descubre espacios únicos para celebrar momentos inolvidables. Nuestros salones están diseñados para brindar diversión y seguridad, creando recuerdos mágicos.??? mandé fruta a lo loco jajaja vamosa tener que cambiar esto si o i xD</p>
-  </section>
-  
+      <h2>Encuentra el lugar ideal para celebrar</h2>
+      <p>Explorá nuestros espacios diseñados para fiestas infantiles inolvidables. Filtrá por ubicación, tipo de evento y capacidad para encontrar el salón perfecto.</p>
+      
+      <form>
+        <label for="ubicacion">Ubicación:</label>
+        <select id="ubicacion" name="ubicacion">
+          <option>Buenos Aires</option>
+          <option>Córdoba</option>
+          <option>Rosario</option>
+        </select><br><br>
+
+        <label for="evento">Tipo de evento:</label>
+        <select id="evento" name="evento">
+          <option>Fiesta infantil</option>
+          <option>Baby Shower</option>
+          <option>Cumpleaños temático</option>
+        </select><br><br>
+
+        <label for="capacidad">Capacidad:</label>
+        <select id="capacidad" name="capacidad">
+          <option>Hasta 30 personas</option>
+          <option>Hasta 50 personas</option>
+          <option>Más de 100</option>
+        </select><br><br>
+
+        <label for="precio">Precio estimado:</label>
+        <input type="text" id="precio" name="precio" placeholder="$"><br><br>
+
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section class="promo">
+      <h3>🎉 Revolucioná los cumples con estilo</h3>
+      <h4>Spa Infantil VIP</h4>
+      <p>Una experiencia de lujo para los más chicos, con relajación, diversión y momentos inolvidables. Disponible en salones seleccionados.</p>
+      <button>Ver Salones con Spa</button>
+    </section>
   </main>
+
   <footer>
     <p>© 2025 IDW S.A</p>
   </footer>
