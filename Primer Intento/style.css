@@ -1,0 +1,207 @@
+/* Pruebas de estilo y diseño */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #EBD8DC;
+  color: #2C3E50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #3FDCE4; 
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3CACFC; 
+}
+
+nav ul li a.active {
+  color: #EAC888; 
+  font-weight: bold;
+}
+
+/* Footer  */
+footer {
+  background-color: #3FDCE4;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Contenido principal */
+main {
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+main section {
+  padding: 30px;
+  margin: 20px auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  color: #2C3E50;
+  text-align: justify;
+}
+
+main h2, main h3 {
+  color: #2C3E50;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #3FDCE4;
+  outline: none;
+}
+
+/* Botón de enviar */
+form button {
+  background-color: #3CACFC;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #348fdd;
+}
+
+/* Datos de contacto */
+.contact-info {
+  background-color: #8ED9DE;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Horarios */
+.horarios {
+  background-color: #EAC888;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Redes*/
+.redes {
+  background-color: #EBD8DC;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #2C3E50;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.redes a:hover {
+  color: #3CACFC;
+}
+
+/* Mapa */
+.mapa {
+  background-color: #3CACFC;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  color: white;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Responsivo... Esto es opcional...*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main section {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
