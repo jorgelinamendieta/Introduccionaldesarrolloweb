@@ -1,3 +1,6 @@
+
+
+
 /*generalll*/
 body {
   font-family: 'Roboto', sans-serif;
@@ -8,7 +11,8 @@ body {
   background-color: #f9f9f9; 
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  height: 100%
 }
 
 /*encabezado OBVIOOOO que hay que cambiar el color jajaj */
@@ -167,4 +171,138 @@ form button:hover {
   footer {
       font-size: 0.8rem;
   }
+}
+
+/* Estilos de la seccion de servicios*/
+
+.portadaservicios {
+ 
+    background-image: url('imagenes/imgservicios/portada.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+.portadaservicios h1{
+  font-family: 'Great Vibes', cursive;
+  font-size: 56px;
+  margin-bottom: 0px;
+  
+}
+.portadaservicios p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:35px;
+  margin-top: 0%;
+  
+}
+.portadaservicios button{
+  background: linear-gradient(45deg, #8ED9DE, #EBD8DC, #BFDCE4, #EAC888);
+
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.portadaservicios button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.portadaservicios button {
+  color:floralwhite;
+  text-shadow: 2px 2px 5px black;
+
+}
+
+.portadaservicios::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+
+.portadaservicios > * {
+  position: relative;
+  z-index: 1;
+}
+.portadaservicios {
+  position: relative; 
+}
+
+/*empezamos estilos del catalogo pagina principal servicios*/
+/* Estilos generales para el contenedor */
+.catalogo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.articulo {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.articulo:hover {
+  transform: scale(1.05);
+}
+
+.articulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.articulo p {
+  position: absolute;
+  bottom: 80px; /* Espacio desde la parte inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  
+  color: white;
+ 
+  z-index: 1;
+}
+
+.articulo a {
+  position: absolute;
+  bottom: 20px; /* Espacio desde la parte inferior */
+  left: 28%;
+  
+  background: linear-gradient(45deg, #8ED9DE, #EBD8DC, #BFDCE4, #EAC888);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.articulo a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
