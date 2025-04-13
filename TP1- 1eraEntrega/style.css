@@ -306,3 +306,20 @@ form button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/*estilos para seccion servicios salones*/
+
+.textoservicios h1{
+  color: #e0a8d3;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+
+  
+}
+
+.textoservicios p{
+  font-family: 'Times New Roman', Times, serif;
+  
+  margin-left: 40px;
+}
