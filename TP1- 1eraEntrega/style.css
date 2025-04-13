@@ -177,7 +177,7 @@ form button:hover {
 
 .portadaservicios {
  
-    background-image: url('portada.jpg'); 
+    background-image: url('imagenes/imgservicios/portada.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -308,9 +308,6 @@ form button:hover {
 }
 
 /*estilos para seccion servicios salones*/
-.textoservicios {
-  margin-bottom:25px;
-}
 .textoservicios h1{
   color: #e0a8d3;
   font-size: 1.8rem;
