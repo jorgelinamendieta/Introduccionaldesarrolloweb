@@ -173,6 +173,8 @@ form button:hover {
   }
 }
 
+
+
 /* Estilos de la seccion de servicios*/
 
 .portadaservicios {
@@ -201,17 +203,17 @@ form button:hover {
   margin-top: 0%;
   
 }
-.portadaservicios button{
+.boton{/*boton de la portada*/
+  position: absolute;
   background: linear-gradient(45deg, #8ED9DE, #EBD8DC, #BFDCE4, #EAC888);
-
+  color: white;
   padding: 12px 24px;
-  border: none;
   border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
+  text-decoration: none;
+  
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 .portadaservicios button:hover{
   transform: scale(1.05);
@@ -321,4 +323,23 @@ form button:hover {
   font-family: 'Times New Roman', Times, serif;
   
   margin-left: 40px;
+}
+
+/*estilos para tipos de salones */
+
+.clasesalones h2{
+  text-align: center;
+color:#e0a8d3;
+}
+
+.clasesalones p{
+  text-align: center;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+}
+
+.clasesalones img{
+  width: 350px;
+  margin-left: 150px;
 }
