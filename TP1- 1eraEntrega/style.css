@@ -1,178 +1,172 @@
-
-
-
-/*generalll*/
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9; 
-  display: flex;
-  flex-direction: column;
-  /*min-height: 100vh;*/
-  height: 100%
+/*
+____________________________________________________________________________________________
+___________________________ESTILO DEL HOME YAMILA MAILEN OVEJERO ____________________________
+____________________________________________________________________________________________*/
+:root {
+  --rosa-suave: #FFC0CB;
+  --rosa-vibrante: #FF69B4;
+  --rosa-oscuro: #E91E63;
+  --blanco: #FFFFFF;
+  --gris-claro: #F7F7F7;
+  --gris-oscuro: #444;
 }
 
-/*encabezado OBVIOOOO que hay que cambiar el color jajaj */
-header {
-  background-color: #e0a8d3; /* Rosa pastel */
-  padding: 15px 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--gris-claro);
+  color: var(--gris-oscuro);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HEADER FIJO MODIFICADO */
+yamila-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-  color: #fff;
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin-left: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff; /* Blanco para que resalte */
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #f8d7e3; /* Rosa más claro para interacciones */
-}
-
-nav ul li a.active {
-  color: #f8d7e3;
+.yamila-empresa {
+  font-size: 2rem;
   font-weight: bold;
+  color: var(--rosa-vibrante);
 }
 
-/*footer*/
-footer {
-  background-color: #e0a8d3; /* Igual que el encabezado */
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
-  margin-top: 20px; /* Espacio opcional */
+.yamila-botones a {
+  text-decoration: none;
+  color: var(--rosa-vibrante);
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-/*ESTO HAY QUE EDITARLO CHICAS, LO QUE HACE ES SEPARAR EL FOOTER DEL MAIN, pero no está implemntado bien. */
-main {
+.yamila-botones a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--rosa-suave);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.yamila-botones a:hover {
+  color: var(--rosa-suave);
+}
+
+.yamila-botones a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* MAIN MODIFICADO */
+yamila-main {
+  position: relative;
   flex: 1;
-  margin-bottom: 40px; /* Ajuste para que el footer esté separado correctamente */
-}
-
-/*ESTILO DE LAS SECCIONES BASICO TOTAL. */
-main section {
-  padding: 30px;
-  margin: 20px auto;
-  background-color: #ffffff; /* Fondo blanco */
-  border: 1px solid #ccc; /* Borde gris claro */
-  border-radius: 8px;
-  max-width: 800px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  text-align: justify; /* Alineación del texto */
-  color: #333; /* Texto gris oscuro */
-}
-
-main h2 {
-  color: #e0a8d3; /* Rosa pastel para destacar títulos */
-  margin-bottom: 15px;
   text-align: center;
-}
-
-main p {
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-/* Añadido: caja translúcida */
-.caja-translucida {
-  background-color: rgba(255, 192, 203, 0.7); /* Rosa translúcido */
-  color: #333; /* Texto gris oscuro */
-  padding: 20px; /* Espaciado interno */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  border: 1px solid #ccc; /* Borde gris claro */
-  max-width: 600px; /* Ancho máximo de la caja */
-  margin: 20px auto; /* Centrado automático */
-  text-align: justify; /* Alineación de texto */
-  backdrop-filter: blur(5px); /* Fondo ligeramente difuminado */
-}
-
-/* Estilo clasico del formulario, tambien le falta mas onda*/
-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--blanco);
+  z-index: 1;
 }
 
-form label {
-  margin-bottom: 5px;
-  color: #666; /* Texto gris claro */
+yamila-main::before {
+  content: '';
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-image: url('imagenes/imagenHome/257736e5525245a97dce8cabce5078bf.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  z-index: -1;
 }
 
-/*nO ES UNA buena practica esta, pero bueno, la cambiamos despues*/
-form input,
-form textarea,
-form button {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
+/* FOOTER MODIFICADO */
+yamila-footer {
+  position: sticky;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  color: var(--blanco);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: normal;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
-form input:focus,
-form textarea:focus {
-  border-color: #e0a8d3; /* Rosa pastel */
-  outline: none;
+/* TÍTULO MODIFICADO */
+.yamila-bienvenidos {
+  font-size: 5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: var(--blanco);
+  text-shadow: 3px 3px 5px var(--rosa-suave), 0 0 20px var(--rosa-vibrante);
+  opacity: 0;
+  animation: fadeIn 2s forwards;
 }
 
-form button {
-  background-color: #e0a8d3; /* Rosa pastel */
-  color: #fff; /* Texto blanco */
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* TEXTO PRINCIPAL (main p) */
+.yamila-texto-bienvenida {
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 1rem auto;
+  max-width: 700px;
+  color: var(--blanco);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeInText 1s 1s forwards;
 }
 
-form button:hover {
-  background-color: #c583b4; /* Rosa más intenso */
-}
-
-/* eL responsive lo copie de un trabajo que ya tenia, habria que chekearlo. pero esto es para la segunda entrega*/
-@media (max-width: 768px) {
-  header {
-      flex-direction: column;
-      text-align: center;
+/* Animaciones */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
+}
 
-  nav ul {
-      flex-direction: column;
-      gap: 10px;
-  }
-
-  main section {
-      margin: 10px;
-      padding: 20px;
-  }
-
-  footer {
-      font-size: 0.8rem;
+@keyframes fadeInText {
+  to {
+    opacity: 1;
   }
 }
 
+/*_________________________________________________________________________________________
+___________________________________________________________________________________________
+________________________________SECCION SERVICIOS________________________________________
+___________________________________________________________________________________________*/
 
 
 /* Estilos de la seccion de servicios*/
@@ -342,4 +336,242 @@ color:#e0a8d3;
 .clasesalones img{
   width: 350px;
   margin-left: 150px;
+}
+/* Ajustes para evitar que el footer se pise con la imagen central */
+.portadaservicios {
+  position: relative;
+  padding-bottom: 60px; 
+}
+
+yamila-footer {
+  position: relative;
+  z-index: 2; /* Asegura que el footer esté por encima de cualquier contenido anterior */
+}
+/* Ajustes para habilitar desplazamiento */
+body {
+  overflow-y: auto; 
+}
+
+.portadaservicios {
+  min-height: 100vh; 
+}
+
+.catalogo {
+  margin-bottom: 60px; 
+}
+
+yamila-footer {
+  position: static; 
+}
+
+
+/*________________________________________________________________________________
+___________________________________SECCION CONTACTO_______________________________
+__________________________________________________________________________________*/
+/* Pruebas de estilo y diseño */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #EBD8DC;
+  color: #2C3E50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #3FDCE4; 
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3CACFC; 
+}
+
+nav ul li a.active {
+  color: #EAC888; 
+  font-weight: bold;
+}
+
+/* Footer  */
+footer {
+  background-color: #3FDCE4;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Contenido principal */
+main {
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+main section {
+  padding: 30px;
+  margin: 20px auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  color: #2C3E50;
+  text-align: justify;
+}
+
+main h2, main h3 {
+  color: #2C3E50;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #3FDCE4;
+  outline: none;
+}
+
+/* Botón de enviar */
+form button {
+  background-color: #3CACFC;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #348fdd;
+}
+
+/* Datos de contacto */
+.contact-info {
+  background-color: #8ED9DE;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Horarios */
+.horarios {
+  background-color: #EAC888;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Redes*/
+.redes {
+  background-color: #EBD8DC;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #2C3E50;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.redes a:hover {
+  color: #3CACFC;
+}
+
+/* Mapa */
+.mapa {
+  background-color: #3CACFC;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  color: white;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Responsivo... Esto es opcional...*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main section {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 }
