@@ -365,160 +365,135 @@ yamila-footer {
 }
 
 
-/*________________________________________________________________________________
-___________________________________SECCION CONTACTO_______________________________
-__________________________________________________________________________________*/
-/* Pruebas de estilo y diseño */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #EBD8DC;
-  color: #2C3E50;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/*
+____________________________________________________________________________________________
+___________________________ESTILO DE CONTACTO ROCIO ANABELA BARRIA ____________________________
+____________________________________________________________________________________________*/
+
+/* Los colores utilizados en esta sección se declaran en :root en la sección HOME */
+.contacto {
+  --celeste: #8ED9DE;
+  --rosado: #EBD8DC;
+  --azul-claro: #7da4b9;
+  --dorado: #C38C2E;
+  --grisito: #CACFC8;
 }
 
-header {
-  background-color: #3FDCE4; 
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* Fondo con textura para darle un toque diferente a la sección contacto */
+.contacto main {
+  background-color: #f5f5f5;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
 }
 
-header h1 {
-  color: white;
-  font-size: 1.8rem;
-  margin: 0;
+/* Espaciado extra entre párrafos */
+.contacto main section p {
+  margin-bottom: 30px;
 }
 
-/* Navegación */
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin-left: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #3CACFC; 
-}
-
-nav ul li a.active {
-  color: #EAC888; 
-  font-weight: bold;
-}
-
-/* Footer  */
-footer {
-  background-color: #3FDCE4;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
-  margin-top: auto;
-}
-
-/* Contenido principal */
-main {
-  flex: 1;
-  margin-bottom: 40px;
-}
-
-main section {
+/* Contenedor principal de cada bloque de contenido del contacto */
+.contacto main section {
   padding: 30px;
   margin: 20px auto;
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: var(--grisito); /* tono neutro para destacar el contenido */
+  border: 1px solid var(--celeste); /* borde celeste suave */
   border-radius: 8px;
   max-width: 800px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  color: #2C3E50;
+  color: #333;
   text-align: justify;
 }
 
-main h2, main h3 {
-  color: #2C3E50;
+/* Títulos */
+.contacto main h2,
+.contacto main h3 {
+  color: var(--dorado);
   text-align: center;
   margin-bottom: 15px;
 }
 
 /* Formulario */
-form {
+.contacto form {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  background-color: var(--rosado);
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-form label {
-  margin-bottom: 5px;
+/* Etiquetas con mayor jerarquía visual */
+.contacto form label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dorado);
+  margin-bottom: 8px;
 }
 
-form input,
-form select,
-form textarea,
-form button {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* Inputs y textarea estilizados con bordes suaves y transiciones agradables */
+.contacto form input,
+.contacto form select,
+.contacto form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--celeste);
+  background-color: var(--grisito);
   font-size: 1rem;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  color: #333;
 }
 
-form input:focus,
-form textarea:focus,
-form select:focus {
-  border-color: #3FDCE4;
+/* Efecto sutil al seleccionar campos del formulario */
+.contacto form input:focus,
+.contacto form textarea:focus,
+.contacto form select:focus {
+  border-color: var(--dorado);
   outline: none;
+  box-shadow: 0 0 8px var(--dorado);
 }
 
-/* Botón de enviar */
-form button {
-  background-color: #3CACFC;
-  color: white;
+/* Botón de enviar con animación al pasar el cursor */
+.contacto form button {
+  padding: 15px 20px;
+  background-color: #7da4b9;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form button:hover {
-  background-color: #348fdd;
+/* Efecto hover que genera un pequeño aumento visual */
+.contacto form button:hover {
+  background-color: #6a8b99;
+  transform: scale(1.05);
 }
 
-/* Datos de contacto */
-.contact-info {
-  background-color: #8ED9DE;
+/* En caso de errores, el mensaje aparece con rojo suave */
+.contacto form .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Horarios de atención destacados sobre fondo celeste */
+.contacto .horarios {
+  background-color: var(--celeste);
+  color: #333;
   padding: 20px;
   border-radius: 8px;
   margin: 20px auto;
   max-width: 800px;
 }
 
-/* Horarios */
-.horarios {
-  background-color: #EAC888;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 20px auto;
-  max-width: 800px;
-}
-
-/* Redes*/
-.redes {
-  background-color: #EBD8DC;
+/* Redes sociales centradas y con colores personalizados */
+.contacto .redes {
+  background-color: var(--grisito);
   padding: 20px;
   border-radius: 8px;
   margin: 20px auto;
@@ -526,52 +501,34 @@ form button:hover {
   text-align: center;
 }
 
-.redes a {
+/* Enlaces con estilo dorado y hover en azul */
+.contacto .redes a {
   text-decoration: none;
-  color: #2C3E50;
+  color: var(--dorado);
   font-weight: bold;
   margin: 0 10px;
 }
 
-.redes a:hover {
-  color: #3CACFC;
+.contacto .redes a:hover {
+  color: var(--azul-claro);
 }
 
-/* Mapa */
-.mapa {
-  background-color: #3CACFC;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 20px auto;
-  max-width: 800px;
-  text-align: center;
-  color: white;
+/* Mapa full width para que se adapte al tamaño de pantalla */
+.contacto .mapa {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  max-width: 100vw;
+  padding: 0;
+  margin-bottom: 0;
 }
 
-.mapa iframe {
+.contacto .mapa iframe {
   width: 100%;
-  height: 300px;
+  height: 350px;
   border: none;
-}
-
-/* Responsivo... Esto es opcional...*/
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  main section {
-    margin: 10px;
-    padding: 20px;
-  }
-
-  footer {
-    font-size: 0.8rem;
-  }
+  display: block;
 }

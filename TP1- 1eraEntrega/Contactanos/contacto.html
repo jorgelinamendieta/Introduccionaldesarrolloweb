@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contacto | IDW S.A.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="contacto.css" />
 </head>
-<body>
-
+<body class="contacto">
   <yamila-header>
     <div class="yamila-empresa">IDW S.A</div>
     <nav class="yamila-botones">
@@ -16,56 +16,55 @@
       <a href="../Nosotros/nosotros.html">NOSOTROS</a>
       <a href="../Servicios/servicios.html">SERVICIOS</a>
       <a href="../Presupuesto/presupuesto.html">PRESUPUESTO</a>
-      <a href="../Contactanos/contacto.html">CONTACTO</a>
+      <a href="../Contactanos/contacto.html" class="active">CONTACTO</a>
     </nav>
   </yamila-header>
-
-  <section class="formulario-contacto">
-    <form>
-      <input type="email" placeholder="Correo electrónico" required />
-      <input type="tel" placeholder="Teléfono" />
-      <input type="text" placeholder="Nombre completo" required />
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-
-    <aside class="newsletter">
-      <h2>Nuestro Newsletter</h2>
-      <p>Suscribite para recibir novedades y promociones exclusivas.</p>
-      <input type="email" placeholder="Tu email" />
-      <button>Suscribirse</button>
-    </aside>
-  </section>
-
-  <section class="info-contacto">
-    <div>
-      <h3>Teléfono</h3>
-      <p>(+54) 0114564127</p>
-    </div>
-    <div>
-      <h3>Email</h3>
-      <p>contacto@idwsa.com</p>
-    </div>
-    <div>
-      <h3>Ubicación</h3>
-      <p>Buenos Aires, Argentina</p>
-    </div>
-  </section>
-
-  <section class="mapa">
-    <iframe src="https://maps.google.com/maps?q=Buenos+Aires,+Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
-  </section>
-
-  <footer>
-    <div class="footer-info">
-      <p>&copy; 2025 IDW S.A. - Todos los derechos reservados.</p>
-      <p>Diseñado por el Grupo 8 de Introducción a Desarrollo Web.. &#128540 </p> <!--Borra!!!-->
-    </div>
-  </footer>
-<!-- Reutilizamos el mismo footer -->
-<yamila-footer>
-  &copy; 2025 IDW S.A - Todos los derechos reservados.
-</yamila-footer>
+  <main>
+    <section>
+      <h2>Contáctanos</h2>
+      <p>¿Querés organizar el cumpleaños soñado para los más pequeños? Contanos lo que imaginas y te ayudamos a hacerlo realidad!</p>     
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section class="contacto-info">
+      <h3>Datos de contacto</h3>
+      <p><strong>Teléfono:</strong> (011) 4857-3221</p>
+      <p><strong>Correo electrónico:</strong> contacto@idwsalones.com</p>
+      <p><strong>Dirección:</strong> Av. Los Sueños 1520, Palermo, CABA, Buenos Aires, Argentina</p>
+    </section>
+    <section class="horarios">
+      <h3>Horarios de atención</h3>
+      <p><strong>Lunes a Viernes:</strong> 9:00 AM - 6:00 PM</p> 
+      <p><strong>Sábados:</strong> 9:00 AM - 12:00 PM</p>
+      <p><strong>Domingos:</strong> Cerrado</p>
+    </section>
+    <section class="redes">
+      <h3>Seguinos en redes</h3>
+      <p>
+        <a href="https://www.facebook.com/IDWSalones" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40" height="40" />
+        </a>
+        <a href="https://www.instagram.com/idw_salones" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" width="40" height="40" />
+        </a>
+        <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="32" height="32">
+        </a>               
+      </p>
+    </section>
+    <section class="mapa">
+      <iframe src="https://maps.google.com/maps?q=Buenos+Aires,+Argentina&amp;output=embed" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+  <yamila-footer>
+    &copy; 2025 IDW S.A - Todos los derechos reservados.
+  </yamila-footer>
 </body>
-
 </html>
