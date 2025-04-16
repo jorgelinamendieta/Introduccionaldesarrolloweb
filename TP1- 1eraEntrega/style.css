@@ -575,3 +575,119 @@ form button:hover {
     font-size: 0.8rem;
   }
 }
+.Mailen-section .Mailen-h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.Mailen-section .Mailen-h3 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  color: #FFC0CB;
+}
+
+.Mailen-section .Mailen-p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.Mailen-form .Mailen-h4 {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  color: #2c3e50;
+}
+
+.Mailen-fieldset {
+  border: 2px solid #EBD8DC;
+  padding: 0 20px 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.Mailen-legend {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fdabb9;
+}
+
+.Mailen-form label {
+  display: block;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.Mailen-form input[type="text"],
+.Mailen-form input[type="tel"],
+.Mailen-form input[type="email"],
+.Mailen-form input[type="date"],
+.Mailen-form input[type="number"],
+.Mailen-form select,
+.Mailen-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.Mailen-form input,
+.Mailen-form select {
+  margin-bottom: 0;
+}
+
+.Mailen-form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.Mailen-form-group {
+  width: 48%;
+}
+
+.Mailen-evento-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Mailen-form-group-tipo {
+  width: 45%;
+}
+
+.Mailen-form-group-fecha {
+  width: 32%;
+}
+
+.Mailen-form-group-invitados {
+  width: 16%;
+}
+
+.Mailen-servicios-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Mailen-form-group-servicios {
+  display: flex;
+}
+
+.Mailen-form-group-servicios input[type="checkbox"] {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.Mailen-form textarea {
+  resize: vertical;
+}
+
+.Mailen-contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}

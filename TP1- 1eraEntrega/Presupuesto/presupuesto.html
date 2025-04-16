@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto | IDW - Eventos</title>
+    <link rel="shortcut icon" href="../Presupuesto/presupuesto-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Reutilizamos el mismo header -->
+    <yamila-header>
+        <div class="yamila-empresa">IDW S.A</div>
+        <nav class="yamila-botones">
+            <a href="../Home/index.html">HOME</a>
+            <a href="../Nosotros/nosotros.html">NOSOTROS</a>
+            <a href="../Servicios/servicios.html">SERVICIOS</a>
+            <a href="../Presupuesto/presupuesto.html">PRESUPUESTO</a>
+            <a href="../Contactanos/contacto.html">CONTACTO</a>
+        </nav>
+    </yamila-header>
+    <main>
+        <div class="Mailen-contenedor">
+            <section class="Mailen-section">
+                <h2 class="Mailen-h2">Queremos ayudarte a hacer realidad el evento que imaginás</h2>
+                <h3 class="Mailen-h3">Solicitá tu Presupuesto</h3>
+                <p class="Mailen-p">Uno de nuestros especialistas se pondrá en contacto en breve, para conocer tus expectativas y ofrecerte una solución a tu medida.</p>
+                <form action="#" method="post" class="Mailen-form">
+                    <h4 class="Mailen-h4">Completa el Formulario</h4>
+                    <fieldset class="Mailen-fieldset">
+                        <legend class="Mailen-legend">Datos Personales</legend>
+                        <div class="Mailen-form-row">
+                            <div class="Mailen-form-group">
+                                <label for="nombre">Nombre y Apellido</label>
+                                <input type="text" name="nombre" id="nombre" required>
+                            </div>
+                            <div class="Mailen-form-group">
+                                <label for="localidad">Localidad</label>
+                                <input type="text" name="localidad" id="localidad" required>
+                            </div>
+                        </div>
+                        <div class="Mailen-form-row">
+                            <div class="Mailen-form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" name="telefono" id="telefono" required>
+                            </div>
+                            <div class="Mailen-form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="Mailen-fieldset">
+                        <legend class="Mailen-legend">Detalle del Evento</legend>
+                        <div class="Mailen-evento-row">
+                            <div class="Mailen-form-group-tipo">
+                                <label for="evento">Tipo de evento</label>
+                                <select name="evento" id="evento" required>
+                                    <option value="boda">Boda</option>
+                                    <option value="corporativo">Corporativo</option>
+                                    <option value="cumpleaños">Cumpleaños</option>
+                                    <option value="cumpleaños_infantiles">Cumpleaños Infantiles</option>
+                                    <option value="quince">Quince</option>
+                                </select>
+                            </div>
+                            <div class="Mailen-form-group-fecha">
+                                <label for="fecha">Fecha del evento</label>
+                                <input type="date" name="fecha" id="fecha" required>
+                            </div>
+                            <div class="Mailen-form-group-invitados">
+                                <label for="invitados">N° Invitados</label>
+                                <input type="number" name="invitados" id="invitados" min="0">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="Mailen-fieldset">
+                        <legend class="Mailen-legend">Servicios</legend>
+                        <div class="Mailen-servicios-row">
+                            <div class="Mailen-form-group-servicios">
+                                <input type="checkbox" name="salon" id="salon" value="salon">
+                                <label for="salon">Salones</label>
+                            </div>
+                            <div class="Mailen-form-group-servicios">
+                                <input type="checkbox" name="menu" id="menu" value="menu">
+                                <label for="menu">Menú</label>
+                            </div>
+                            <div class="Mailen-form-group-servicios">
+                                <input type="checkbox" name="animaciones" id="animaciones" value="animaciones">
+                                <label for="animaciones">Animaciones</label>
+                            </div>
+                            <div class="Mailen-form-group-servicios">
+                                <input type="checkbox" name="juegos" id="juegos" value="juegos">
+                                <label for="juegos">Juegos</label>
+                            </div>
+                            <div class="Mailen-form-group-servicios">
+                                <input type="checkbox" name="mdulce" id="mdulce" value="mdulce">
+                                <label for="mdulce">Mesa dulce</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="Mailen-fieldset">
+                        <legend class="Mailen-legend">Datos Adicionales</legend>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="5" cols="80" required></textarea>
+                        <button type="submit">Solicitar Presupuesto</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+    <!-- Reutilizamos el mismo footer -->
+    <yamila-footer>
+        &copy; 2025 IDW S.A - Todos los derechos reservados.
+    </yamila-footer>
+</body>
+</html>
