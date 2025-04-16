@@ -532,3 +532,138 @@ ________________________________________________________________________________
   border: none;
   display: block;
 }
+
+/*
+____________________________________________________________________________________________
+___________________________ESTILO DE NOSOTROS ______________________________________________
+____________________________________________________________________________________________*/
+.baloo-2-titulo-principal {
+  font-family: "Baloo 2", cursive;
+  color: #c999bd;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px 4px #3f253b;
+}
+
+#historia {
+  background-color: #c5e8f3;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#beneficios {
+  background-color: #f7fda4;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.beneficios-h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'pacifico', cursive;
+  font-size: 2rem;
+  color: #a64ca6; 
+}
+
+.content {
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.content p {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0;
+}
+
+.fondo-conocenos {
+  background-image: url("imagenes/imagenNosotros/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.img-chica {
+  display: block;
+  margin: 0 auto;
+  width: 65%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.beneficios-h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'pacifico', cursive;
+  font-size: 2rem;
+}
+
+.ultimo-texto {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-family: 'releway', cursive;
+  font-size: 1.5rem;
+  color: #c44f6c;
+}
+
+.redes {
+  background-color: #ebd8dc;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.redes a:hover {
+  color: #3cacfc;
+}
+
+.contenedor-principal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.mi-footer-wrapper {
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.mi-footer-wrapper yamila-footer {
+  margin: 0 auto;
+  max-width: 100%;
+  background: none;
+}
