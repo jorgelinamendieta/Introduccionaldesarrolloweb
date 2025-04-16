@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presupuesto | IDW - Eventos</title>
     <link rel="shortcut icon" href="../Presupuesto/presupuesto-96.png" type="image/x-icon">
-    
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
@@ -20,71 +20,99 @@
     </header>
     <main>
         <section>
-            <h2>Queremos ayudarte a hacer realidad el evento que imaginás.</h2>
+            <h2>Queremos ayudarte a hacer realidad el evento que imaginás</h2>
             <h3>Solicitá tu Presupuesto</h3>
             <p>Uno de nuestros especialistas se pondrá en contacto en breve, para conocer tus expectativas y ofrecerte una solución a tu medida.</p>
            <!-- Formulario de Solicitud Presupuesto -->
             <form action="#" method="post">
-                <h4>Completa el formulario.</h4>
+                <h4>Completa el Formulario</h4>
                 <!-- Campos de Datos Personales del Solicitante -->
                 <fieldset>
                     <legend>Datos Personales</legend>
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                    <label for="localidad">Localidad</label>
-                    <input type="text" name="localidad" id="localidad" required>
-                    <br><br>
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" required>
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" name="email" id="email" required>
-                    <br>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre y Apellido</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="localidad">Localidad</label>
+                            <input type="text" name="localidad" id="localidad" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>   
+                    </div>
                 </fieldset>
-                <br>
                 <!-- Campos de Datos de Detalles del Evento -->
                 <fieldset>
                     <legend>Detalle del Evento</legend>
-                    <label for="evento">Tipo de evento</label>
-                    <select name="evento" id="evento" required>
-                        <option value="boda">Boda</option>
-                        <option value="corporativo">Corporativo</option>
-                        <option value="cumpleaños">Cumpleaños</option>
-                        <option value="cumpleaños_infantiles">Cumpleaños Infantiles</option>
-                        <option value="quince">Quince</option>
-                    </select>
-                    <label for="fecha">Fecha del evento</label>
-                    <input type="date" name="fecha" id="fecha" required>
-                    <label for="invitados">Cantidad de invitados</label>
-                    <input type="number" name="invitados" id="invitados" required>
-                    <br><br>
+                    <div class="evento-row">
+                        <div class="form-group-tipo">
+                            <label for="evento">Tipo de evento</label>
+                            <select name="evento" id="evento" required>
+                                <option value="boda">Boda</option>
+                                <option value="corporativo">Corporativo</option>
+                                <option value="cumpleaños">Cumpleaños</option>
+                                <option value="cumpleaños_infantiles">Cumpleaños Infantiles</option>
+                                <option value="quince">Quince</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group-fecha">
+                            <label for="fecha">Fecha del evento</label>
+                            <input type="date" name="fecha" id="fecha" required>
+                        </div>
+                        <div class="form-group-invitados">
+                            <label for="invitados">N° Invitados</label>
+                            <input type="number" name="invitados" id="invitados" min="0">
+                        </div>
+                    </div>
+                    
                 </fieldset>
-                <br>
                 <!-- Campos de Datos de los Servicios que IDW -->
                 <fieldset>
                     <legend>Servicios</legend>
-                    <input type="checkbox" name="salon" id="salon" value="salon">
-                    <label for="salon">Salones</label><br>
-                    <input type="checkbox" name="menu" id="menu" value="menu">
-                    <label for="menu">Menú</label><br>
-                    <input type="checkbox" name="mdulce" id="mdulce" value="mdulce">
-                    <label for="mdulce">Mesa dulce</label><br>
-                    <input type="checkbox" name="animaciones" id="animaciones" value="animaciones">
-                    <label for="animaciones">Animaciones</label><br>
-                    <input type="checkbox" name="juegos" id="juegos" value="juegos">
-                    <label for="juegos">Juegos</label><br>
+                    <div class="servicios-row">
+                        <div class="form-group-servicios">
+                            <input type="checkbox" name="salon" id="salon" value="salon">
+                            <label for="salon">Salones</label>
+                        </div>
+                        <div class="form-group-servicios">
+                            <input type="checkbox" name="menu" id="menu" value="menu">
+                            <label for="menu">Menú</label>
+                        </div>
+                        <div class="form-group-servicios">
+                            <input type="checkbox" name="animaciones" id="animaciones" value="animaciones">
+                            <label for="animaciones">Animaciones</label>
+                        </div>
+                        <div class="form-group-servicios">
+                            <input type="checkbox" name="juegos" id="juegos" value="juegos">
+                            <label for="juegos">Juegos</label>
+                        </div>
+                        <div class="form-group-servicios">
+                            <input type="checkbox" name="mdulce" id="mdulce" value="mdulce">
+                            <label for="mdulce">Mesa dulce</label>
+                        </div>
+                    </div>
                 </fieldset>
-                <br>
                 <!-- Campo de Datos Adicionales y Botón de Envío del Formulario -->
                 <fieldset>
                     <legend>Datos Adicionales</legend>
                     <label for="mensaje">Mensaje</label>
-                    <br>
                     <textarea name="mensaje" id="mensaje" rows="5" cols="80" required></textarea>
-                    <br><br>
                     <button type="submit">Solicitar Presupuesto</button>
                 </fieldset>
             </form>
-            <br><br>
         </section>
     </main>
     <footer>
